@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Shufang
-middle_name: R.
+middle_name:
 last_name: Zhou
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
@@ -641,3 +641,10 @@ jsonresume:
   - languages
   - interests
   - references
+
+exclude:
+  - _news/announcement_*.md
+  - _pages/blog.md
+  - _posts/
+  - _projects/?_project.md
+  - assets/jupyter/blog.ipynb
