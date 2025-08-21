@@ -144,11 +144,11 @@ newsletter:
 
 collections:
   books:
-    output: true
+    output: false
   news:
     defaults:
-      layout: post
-    output: true
+      layout: false
+    output: false
   projects:
     output: true
 
@@ -191,13 +191,24 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
+  - _pages/blog.md
+  - _posts/
+  - assets/jupyter/blog.ipynb
+  - _pages/publications.md
+  - _bibliography/
+  - _pages/cv.md
+  - _data/cv.yml
+  - assets/json/resume.json
+  - _pages/people.md
+  - _pages/teaching.md
+  - _pages/dropdown.md     #submenus
 keep_files:
   - CNAME
   - .nojekyll
 
 # Plug-ins
 plugins:
-  - jekyll-archives-v2
+  # - jekyll-archives-v2
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-get-json
@@ -207,7 +218,7 @@ plugins:
   - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll-regex-replace
-  - jekyll/scholar
+  # - jekyll/scholar
   - jekyll-sitemap
   - jekyll-tabs
   - jekyll-terser
@@ -641,16 +652,3 @@ jsonresume:
   - languages
   - interests
   - references
-
-exclude:
-  - _pages/blog.md
-  - _posts/
-  - assets/jupyter/blog.ipynb
-  - _pages/publications.md
-  - _bibliography/
-  - _pages/cv.md
-  - _data/cv.yml
-  - assets/json/resume.json
-  - _pages/people.md
-  - _pages/teaching.md
-  - _pages/dropdown.md     #submenus
